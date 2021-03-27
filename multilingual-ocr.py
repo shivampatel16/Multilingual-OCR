@@ -42,12 +42,12 @@ for i in range(total_pages):
     im = Image.open("input_images/page_" + str(i + 1) + ".PNG")
     text = text + pytesseract.image_to_string(im, lang = 'hin')
 
-# Store unformatted text to a text file	
+# Store unformatted text (broken sentences of a paragraph as they appear in the PDF) to a text file. 
 with open("output_unformatted.txt", "w", encoding="utf-8") as myfile:
     myfile.write(text)
 
 ###
-# Step 4 - Formatting extracted text
+# Step 4 - Formatting extracted text. Combines segments of a paragraph (broken sentences) in the unformatted text into a single paragraph.
 ###		
 
 edited_text = ""
@@ -58,6 +58,6 @@ for i in range(len(text)):
     else:
         edited_text = edited_text + text[i]
         
-# Store formatted text to a text file	
+# Store formatted text to a text file
 with open("output_formatted.txt", "w", encoding="utf-8") as myfile:
     myfile.write(edited_text)
