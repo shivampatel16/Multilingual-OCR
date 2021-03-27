@@ -8,15 +8,15 @@ Multilingual-OCR is an end-to-end text extraction model which simply inputs a PD
 
 1. [pdf2image](https://pypi.org/project/pdf2image/)
 
-```pip install pdf2image```
+   ```pip install pdf2image```
 
 2. [pytesseract](https://pypi.org/project/pytesseract/)
 
-```pip install pytesseract```
+   ```pip install pytesseract```
 
 3. Image (PIL)
 
-```pip3 install Image```
+   ```pip3 install Image```
 
 4. poppler 
 - Install poppler as described [here](https://pypi.org/project/pdf2image/).
