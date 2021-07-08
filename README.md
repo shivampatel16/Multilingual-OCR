@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Multilingual-OCR is an end-to-end text extraction model which simply inputs a PDF (even large ones!) and outputs a text file with the extracted text, which can be used for further processing. Multilingual-OCR can extract text in multiple languages. 
+Multilingual-OCR is an end-to-end text extraction tool which simply inputs a PDF (even large ones!) and outputs a text file with the extracted text, which can be used for further processing. Multilingual-OCR can extract text in multiple languages. 
 
 ## Dependencies
 
